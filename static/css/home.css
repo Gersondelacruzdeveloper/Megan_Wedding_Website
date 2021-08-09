@@ -1,0 +1,58 @@
+
+.photo_example img{
+width: 100%;
+height:100%;
+}
+
+.photo_example{
+width:100%;
+margin:auto;
+margin-top:65px;
+}
+
+.names_title{
+font-family :snellroundhandw01-scrip, cursive;
+font-size:74px;
+color:#5e5c5c;
+margin-top:100px;
+text-align:center;
+}
+
+.sub_title{
+font-family: lobster, cursive;
+text-align:center;
+font-size:30px;
+  width: 350px;
+  height:50px;
+  margin:auto;
+  border-left: 50px solid #9BA17B;
+  border-right: 50px solid #9BA17B;
+  border-bottom: 50px solid #EAB6B8;
+}
+
+.countdown{
+background-color:#9BA17B;
+color:white;
+width:300px;
+margin:auto;
+margin-top:30px;
+text-align:center;
+}
+.div_btn{
+margin:auto;
+text-align:center;
+margin-top:30px;
+}
+.invite_btn{
+background-color:#9BA17B;
+color:white;
+}
+.div_btn i{
+color: #EAB6B8;
+}
+.invite_btn:hover{
+background-color:#565a3f;
+}
+.div_btn i:hover{
+color:black;
+}
