@@ -2,28 +2,63 @@
 {% load static %}
 {% block content %}
 
-
-
-<style>
-
-    body{
-    background-image: url('{% static 'images/vineyard.jpeg' %}');
-    }
-
-
-
-
-</style>
-<section>
-<!--
-<div class="photo_example">
-      <img src="{% static 'images/vineyard.jpeg' %}">
-    </div>
-    -->
+<div class="container">
 
     <div class="names_title">
         <p>Megan & Matthew </p>
     </div>
+
+   <div class="sub-container">
+    <div class="megan-piture">
+        <img src="{% static 'images/megan_picture.jpeg' %}">
+    </div>
+
+    <div class="date-count">
+    <h2 class="date">July 22th, 2022</h2>
+    <p class="place">Thornhill Rd, Thornhill, Cardiff,<br> Caerphilly CF14 9UA</p>
+
+    <div class="countdown-row countdown-show3">
+
+        <div class="countdown-section">
+        <div class="countdown-amount" id="days">00</div>
+        <div class="countdown-period">DAYS</div>
+      </div>
+
+    <div class="countdown-section">
+        <div class="countdown-amount" id="hours">00</div>
+        <div class="countdown-period">HOURS</div>
+    </div>
+
+     <div class="countdown-section">
+        <div class="countdown-amount" id="minutes">00</div>
+        <div class="countdown-period">MINS</div>
+    </div>
+
+     <div class="countdown-section">
+        <div class="countdown-amount"  id="seconds">00</div>
+        <div class="countdown-period">SECS</div>
+    </div>
+
+        </div>
+
+        <div class="text-center flower">
+     <img src="{% static 'images/green-flower.png' %}">
+    </div>
+
+    </div>
+
+</div>
+
+     <div class="div_btn">
+        <a href="{% url 'check_guest' %}"><button class="btn invite_btn"><i class="far fa-hand-point-right"></i> Click here for invite</button></a>
+    </div>
+
+
+</div>
+
+
+
+    <!--
      <div class="sub_title">
          <p>Are getting married</p>
      </div>
@@ -45,58 +80,15 @@
 
 </table>
 
-
     <div class="div_btn">
-        <button class="btn invite_btn" onClick="changeColor();" ><i class="far fa-hand-point-right"></i> Click here for invite</button>
+        <a href="{% url 'check_guest' %}"><button class="btn invite_btn"><i class="far fa-hand-point-right"></i> Click here for invite</button></a>
+
     </div>
-
-
-</section>
-
+    -->
 
 <!--FOOTER OF THE PAGE-->
 <footer>
-    <p></p>
 
 </footer>
-
-<script>
-// Set the date we're counting down to
-var countDownDate = new Date("Jul 22, 2022 13:30").getTime();
-
-// Update the count down every 1 second
-var x = setInterval(function() {
-
-  // Get today's date and time
-  var now = new Date().getTime();
-
-  // Find the distance between now and the count down date
-  var distance = countDownDate - now;
-
-  // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-  // Output the result in an element with id="demo"
-  document.getElementById("days").innerHTML = days
-  document.getElementById("hours").innerHTML = hours
-  document.getElementById("minutes").innerHTML = minutes
-  document.getElementById("seconds").innerHTML = seconds
-
-  // If the count down is over, write some text
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("demo").innerHTML = "EXPIRED";
-  }
-}, 1000);
-
-
-
-
-
-
-</script>
 
 {% endblock content %}

@@ -1,0 +1,73 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+{% load static %}
+{% block content %}
+
+
+
+<section>
+
+<h2 class="check_title ">Night Guest</h2>
+
+	  <div class="rsvp_form">
+		  	 <h5 class="add-title">Join With Us</h5>
+		   <div class="notice">Please reserve before Feb 14th, 2018. Tell us if you're coming</div>
+            <div class="form-wrapper">
+		  <form id="contact-form" method="POST" action="">
+				<div class="form-row1">
+				 {% csrf_token %}
+                    <div class="form-input">
+					  <input type="text" class="form-unique" id="inputEmail4" name="first_name" placeholder="First Name" required>
+					 </div>
+
+				     <div class="form-input">
+					  <input type="text" class="form-unique" id="inputEmail4" name="last_name" placeholder="Last Name" required>
+					 </div>
+
+					<div class="form-input">
+					  <input type="email" class="form-unique" id="inputEmail4" placeholder="Email" name="email" required>
+					 </div>
+
+					 <div class="form-input">
+					  <input type="number" class="form-unique" id="number_adult" name="number_adult" placeholder="Number of Adult" min="0" required>
+					 </div>
+
+					<div class="form-input">
+					  <input type="number" class="form-unique" id="number_children" name="number_children" placeholder="Number of Children" min="0" required>
+					 </div>
+
+
+                      <div class="form-input">
+					  <input type="text" class="form-unique" id="inputEmail4" name="telephone" placeholder="Telephone Number" required>
+					 </div>
+
+                     <div class="form-input">
+					<textarea required  class="input-field" name="message" placeholder="Message..."></textarea>
+                     </div>
+
+				     <div class="form-btn-contact">
+					  <input  class="btn btn-outline-secondary btn-md" id="submit-btn" type="submit" value="SUBMIT">
+					 </div>
+						</div>
+			</form>
+		  </div>
+
+		      <div class="text-center flower">
+			 <img src="{% static 'images/green-flower.png' %}">
+			</div>
+
+
+		  </div>
+
+</section>
+
+
+<!--FOOTER OF THE PAGE-->
+<footer>
+    <p></p>
+
+</footer>
+
+
+
+{% endblock content %}

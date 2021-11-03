@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+
+
+<section>
+
+</table>
+<h2 class="check_title ">Please Select the appropriate button bellow</h2>
+
+           <div class="check-btn">
+               <a href="{% url 'day_guest' %}"><button class="btn invite_btn check"><i class="far fa-user"></i> Day Guest</button></a>
+                </div>
+
+            <div class="check-btn">
+                <a href="{% url 'night_guest' %}"><button class="btn invite_btn check"><i class="far fa-user"></i> Night Guest</button></a>
+            </div>
+
+</section>
+
+
+<!--FOOTER OF THE PAGE-->
+<footer>
+    <p></p>
+
+</footer>
+
+
+{% endblock content %}

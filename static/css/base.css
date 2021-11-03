@@ -1,13 +1,36 @@
 body{
-background-color:#EAB6B8;
+background-color:rgb(247, 247, 247);
 }
+* {
+  box-sizing: border-box;
+}
+
 .bg-color{
-background-color:#EAB6B8;
+background-color:white;
 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .brand{
-font-family :snellroundhandw01-scrip, cursive;
+font-family:"Alex Brush", sans-serif;
+color:rgb(26, 26, 26);
+}
+
+.nav-link{
+   font-family: "Poppins", sans-serif;
+   font-size:13px;
+   font-weight: bold;
+}
+
+.link-nav a:hover{
+font-family:didot-w01-italic, serif;
+color:rgb(112, 160, 118);
+}
+
+#bg-heart-color{
+   color:rgb(112, 160, 118);
+}
+.bg-white{
+background-color:white;
 }

@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+{% load static %}
+{% block content %}
+
+
+
+<style>
+    body{
+    background-image: url('{% static 'images/vineyard.jpeg' %}');
+    }
+</style>
+<section>
+
+<h2 class="sent_info">Thank you! See you soon</h2>
+    <h6 class="detail_title">An email with the event's details was sent to you</h6>
+
+        <div class="div_btn">
+        <a href="{% url 'home' %}"><button class="btn invite_btn"><i class="far fa-hand-point-right"></i> Back to home page</button></a>
+
+    </div>
+</section>
+
+
+<!--FOOTER OF THE PAGE-->
+<footer>
+    <p></p>
+
+</footer>
+
+
+
+{% endblock content %}

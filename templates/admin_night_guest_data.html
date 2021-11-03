@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+{% load static %}
+{% block content %}
+
+
+
+<section>
+    <h2 class="guest-data">Night Guest</h2>
+ <div class="table_wrapper table-responsive">
+
+<table id="module_table">
+  <tr>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Email</th>
+    <th>Telephone</th>
+      <th>Number of adult</th>
+      <th>Number of children</th>
+        <th>Message</th>
+    <th></th>
+    <th></th>
+  </tr>
+
+
+{% for NightGuest in NightGuests %}
+   <tr>
+    <td>{{NightGuest.first_name}}</td>
+    <td>{{NightGuest.last_name}}</td>
+    <td>{{NightGuest.email}}</td>
+    <td>{{NightGuest.telephone}}</td>
+       <td>{{NightGuest.number_adult}}</td>
+       <td>{{NightGuest.number_children}}</td>
+       <td>{{NightGuest.message}}</td>
+            <td><a href="{% url 'edit' NightGuest.id %}"><button class="btn invite_btn check"><i class="far fa-edit"> Edit</i></button></a> </td>
+            <td><a href="{% url 'night_delete' NightGuest.id %}"><button class="btn invite_btn check"><i class="fas fa-trash-alt"> Delete</i></button></a> </td>
+      </tr>
+    {% endfor %}
+
+</table>
+
+
+</footer>
+
+
+
+{% endblock content %}

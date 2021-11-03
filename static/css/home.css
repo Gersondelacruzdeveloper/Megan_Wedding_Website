@@ -11,8 +11,8 @@ margin-top:65px;
 }
 
 .names_title{
-font-family :snellroundhandw01-scrip, cursive;
-font-size:74px;
+font-family:"Alex Brush", sans-serif;
+font-size:104px;
 color:#5e5c5c;
 margin-top:100px;
 text-align:center;
@@ -25,9 +25,7 @@ font-size:30px;
   width: 350px;
   height:50px;
   margin:auto;
-  border-left: 50px solid #9BA17B;
-  border-right: 50px solid #9BA17B;
-  border-bottom: 50px solid #EAB6B8;
+  background-color:#EAB6B8;
 }
 
 .countdown{
@@ -39,20 +37,98 @@ margin-top:30px;
 text-align:center;
 }
 .div_btn{
+clear:both;
 margin:auto;
 text-align:center;
-margin-top:30px;
+margin-top:450px;
 }
 .invite_btn{
-background-color:#9BA17B;
-color:white;
+background-color:white;
+color:black;
 }
 .div_btn i{
-color: #EAB6B8;
+color: #70A076;
 }
 .invite_btn:hover{
-background-color:#565a3f;
+background-color: #70A076;
+color:white;
 }
 .div_btn i:hover{
-color:black;
+color:white;
+}
+
+.container{
+background-color:rgb(247, 247, 247);
+width:100%;
+}
+
+.date{
+font-family:"Alex Brush", sans-serif;
+color:rgb(41, 41, 41);
+text-align:center;
+}
+.place{
+   font-family: "Poppins", sans-serif;
+   font-size:13px;
+   text-align:center;
+}
+
+
+/* countdown*/
+
+.countdown-show3{
+    width: 100%;
+    margin:auto;
+    overflow:hidden;
+    padding:10px;
+    text-align: center;
+}
+
+
+ .countdown-section {
+    background-color: #FFF;
+    float: left;
+    font-size: 75%;
+    border-right: 1px solid rgba(214,214,214,0.4);
+    margin:5px;
+    padding:10px;
+    margin-left:30px;
+}
+
+
+.countdown-period {
+    display: block;
+    color: #282828;
+}
+.countdown-amount {
+    font-size: 200%;
+    color: #70A076;
+    min-width: 70px;
+    padding-bottom: 0;
+    font-size: 35px;
+    font-weight: 400;
+}
+
+
+.flower{
+margin-top:30px;
+}
+
+.megan-piture img{
+ width:50%;
+ float:left;
+ height:400px;
+ object-fit:cover;
+}
+.date-count{
+width:50%;
+float:left;
+height:400px;
+}
+.sub-container{
+
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px){
+
 }
