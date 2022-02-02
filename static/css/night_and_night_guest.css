@@ -1,12 +1,12 @@
 
 .rsvp_form{
-width:600px;
+width:60%;
 margin:auto;
 margin-top:30px;
 background-color:white;
- box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-  padding: 20px;
+box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+transition: 0.3s;
+padding: 20px;
 }
 .rsvp_form:hover{
  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
@@ -103,3 +103,14 @@ background-color:rgb(112, 160, 118);
 }
 
 
+@media only screen and (max-width: 903px){
+
+  .rsvp_form{
+    width:90%;
+  }
+
+  .add-title{
+    font-size:30px;
+  }
+      
+}

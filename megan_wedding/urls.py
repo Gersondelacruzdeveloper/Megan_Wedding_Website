@@ -14,4 +14,7 @@ urlpatterns = [
     path('edit_day/<str:pk>/', views.edit_dayGuest, name="edit_day"),
     path('day_delete/<str:pk>/', views.delete_day, name="day_delete"),
     path('night_delete/<str:pk>/', views.delete_night, name="night_delete"),
+    path('accomodation',views.acomodation, name='accomodation'),
+    path('events',views.events, name='events'),
+    path('contact',views.contact, name='contact')
 ]

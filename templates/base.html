@@ -10,11 +10,14 @@
 	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap" rel="stylesheet">
 	<link href="http://fonts.cdnfonts.com/css/lorem-ipsum" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/login.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/signup.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'css/check_guest.css'%}">
     <link rel="stylesheet" type="text/css" href="{% static 'css/night_and_night_guest.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'css/night-and-day-guest-edit.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'css/table_data.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/acomodation.css' %}">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alex Brush">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
@@ -23,7 +26,7 @@
 <body class="container-fluid">
 <nav class="navbar navbar-expand-lg navbar-light bg-color fixed-top">
   <div class="container-fluid">
-    <a class="navbar-brand text-dark brand" href="#">Megan & Matthew</a>
+    <a class="navbar-brand text-dark brand" href="{% url 'home' %}">Megan & Matthew</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -42,26 +45,24 @@
           <a class="nav-link " href=""><i id="bg-heart-color" class="fas fa-heart"></i></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-dark" href="">Accommodation</a>
+          <a class="nav-link text-dark" href="{% url 'accomodation' %}">Accommodation</a>
         </li>
                <li class="nav-item">
           <a class="nav-link" href=""><i id="bg-heart-color" class="fas fa-heart"></i></a>
         </li>
           <li class="nav-item">
-          <a class="nav-link text-dark" href="">Events</a>
+          <a class="nav-link text-dark" href="{% url 'events' %}">Events</a>
         </li>
                <li class="nav-item">
           <a class="nav-link" href=""><i id="bg-heart-color" class="fas fa-heart"></i></a>
         </li>
           <li class="nav-item">
-          <a class="nav-link text-dark" href="">Contact</a>
+          <a class="nav-link text-dark" href="{% url 'contact' %}">Contact</a>
         </li>
 
           <li class="nav-item">
           <a class="nav-link" href=""><i id="bg-heart-color" class="fas fa-heart"></i></a>
         </li>
-
-
 
            <li class="nav-item dropdown">
         <a class="nav-link  text-dark dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -70,18 +71,8 @@
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <a class="dropdown-item text-dark" href="{% url 'day_data' %}">Day Guest</a>
             <a class="dropdown-item text-dark" href="{% url 'night_data' %}">Night Guest</a>
-          <a class="dropdown-item" href="#">Log Out</a>
+          <a class="dropdown-item" href="{% url 'logout' %}">Log Out</a>
       </li>
-
-
-
-
-
-
-
-
-
-
 
       </ul>
     </div>
@@ -102,5 +93,5 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 {% endblock %}
-  </body>
+</body>
 </html>

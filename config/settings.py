@@ -45,10 +45,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'megan_wedding',
 
     # third party apps
     'crispy_forms',
+    # my apps
+    'accounts',
+    'megan_wedding',
 ]
 
 
@@ -133,6 +135,7 @@ STATICFILES_DIRS = [
 ]
 MEDIA_ROOT = os.path.join(BASE_DIR, 'images')
 
+CRISPY_TEMPLATE_PACK = 'bootstrap4' # new
 
 SECURE_SSL_REDIRECT = env.bool("DJANGO_SECURE_SSL_REDIRECT", default=True)
 SECURE_HSTS_SECONDS = env.int("DJANGO_SECURE_HSTS_SECONDS", default=2592000)
