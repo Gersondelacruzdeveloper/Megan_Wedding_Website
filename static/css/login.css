@@ -64,10 +64,11 @@
 
 			.login-heading{
 				font-family:"Alex Brush", sans-serif;
-				font-size: 50px;
+				font-size: 70px;
 				color:#5e5c5c;
-				margin-top:80px;
+				margin-top:70px;
 				text-align:center;
+
 			}
 
     /* responsive */
@@ -83,7 +84,7 @@
 
 		.user_card {
 			width: 70%;
-			margin-top: 10%;
+			margin-top: 2%;
 			background: white;
 			position: relative;
 			display: flex;
